@@ -1,11 +1,11 @@
 {
-  "name": "wmf-poc-template",
+  "name": "i18next-mfe-issue",
   "version": "1.0.0",
-  "description": "Template to create POC related to Webpack Module Federation",
+  "description": "Showcase an issue with i18next and MFE.",
   "private": true,
   "scripts": {
     "dev": "pnpm -r --parallel dev",
-    "build": "pnpm -r --parallel build",
+    "build": "pnpm -r build",
     "serve-build": "pnpm -r -parallel serve-build",
     "reset": "pnpm run \"/^reset:.*/\"",
     "reset:node-modules": "pnpm -r --include-workspace-root --parallel exec pnpm dlx rimraf node_modules",

@@ -48,12 +48,12 @@ export default {
             },
             shared: {
                 "react": {
-                  singleton: true,
-                  strictVersion: true
+                    eager: true,
+                    singleton: true
                 },
                 "react-dom": {
-                  singleton: true,
-                  strictVersion: true
+                    eager: true,
+                    singleton: true
                 }
             }
         }),
