@@ -1,5 +1,5 @@
 {
-  "name": "i18next-mfe-issue",
+  "name": "react-i18next-mfe-issue",
   "version": "1.0.0",
   "description": "Showcase an issue with react-i18next and MFE.",
   "private": true,
