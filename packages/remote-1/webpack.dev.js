@@ -51,7 +51,8 @@ export default {
             },
             shared: {
               "react": {
-                singleton: true
+                singleton: true,
+                requiredVersion: false
               },
               "react-dom": {
                 singleton: true

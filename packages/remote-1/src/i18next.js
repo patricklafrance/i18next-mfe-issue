@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import resourcesEn from "./locales/en.json";
 
 i18n
+    .use(initReactI18next)
     .init({
         debug: true,
         lng: "en",
@@ -11,7 +12,6 @@ i18n
         resources: {
             en: resourcesEn
         }
-    })
-    .use(initReactI18next);
+    });
 
 export default i18n;
