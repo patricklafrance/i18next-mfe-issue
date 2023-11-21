@@ -1,4 +1,4 @@
-# i18next-mfe-issue
+# react-i18next-mfe-issue
 
 To trigger the WARNING:
 
