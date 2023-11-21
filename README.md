@@ -12,7 +12,25 @@ WARNING in shared module react
 No required version specified and unable to automatically determine one. Unable to find required version for "react" in description file (i18next-mfe-issue\node_modules\.pnpm\react-i18next@13.5.0_i18next@23.7.6_react-dom@18.2.0_react@18.2.0\node_modules\react-i18next\dist\es\package.json). It need to be in dependencies, devDependencies or peerDependencies.      
 ```
 
-## Potential solution
+## Solution
+
+In the projects that use the `react-i18next` package, add a `requiredVersion: false` to the `react` shared dependency:
+
+```js
+{
+  shared: {
+      "react": {
+          singleton: true,
+          requiredVersion: false
+      },
+      "react-dom": {
+          singleton: true
+      }
+  }
+}
+```
+
+## Other potential solution
 
 Manually adding `react-i18next` react dependencies to `node_modules/react-i18next/dist/es/package.json` seems to remove the warning:
 
